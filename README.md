@@ -35,3 +35,5 @@ if __name__ == "__main__":
 First you have to download data from the API, and then write this data to file, which in turn is used to generate two `CSV` files.
 
 After you get the aforementioned files, you can use the package [csvtotable](https://github.com/vividvilla/csvtotable) to generate the HTML files.
+
+Opening one of the two HTML files, you can sort the rows by `Real-life`, in order to get the names of the machines with the highest score for that attribute.
