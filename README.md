@@ -42,7 +42,6 @@ pip3 install csvtotable
 
 # generate HTML files
 $HOME/.local/bin/csvtotable data/all_matrices_maker.csv data/all_matrices_maker.html
-/home/garnet/.local/bin/csvtotable data/all_matrices_aggregate.csv data/all_matrices_aggregate.html
 
 # open them
 firefox data/*.html

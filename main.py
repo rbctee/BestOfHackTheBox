@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from secrets import API_TOKEN
 
 OUTPUT_DIR = 'data'
@@ -80,7 +81,10 @@ def write_matrices_data_to_csv(maker_or_aggregate="aggregate"):
 
 
 if __name__ == "__main__":
-    # write_data_all_machines()
-    # write_data_all_matrices()
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+
+    write_data_all_machines()
+    write_data_all_matrices()
     write_matrices_data_to_csv()
     write_matrices_data_to_csv(maker_or_aggregate='maker')
