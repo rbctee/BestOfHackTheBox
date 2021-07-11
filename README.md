@@ -41,7 +41,7 @@ After you get the aforementioned files, you can use the package [csvtotable](htt
 pip3 install csvtotable
 
 # generate HTML files
-$HOME/.local/bin/csvtotable data/all_matrices_maker.csv data/all_matrices_maker.html
+bash gen_html.sh
 
 # open them
 firefox data/*.html
